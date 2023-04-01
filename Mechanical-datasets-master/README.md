@@ -1,5 +1,46 @@
 # Mechanical-datasets
 
+**Reformat Description**
+
+1.Data arranged in 8 columns by channel name. An example of loading data operation is listed here.
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+csv_data = pd.read_csv(r"./xxx.csv")
+# You can select which channel to load by head index from Channel1 to Channel8
+# Channel1 Channel2 Channel3 Channel4 Channel5 Channel6 Channel7 Channel8
+vib = csv_data.Channel1[:1000]
+x = np.arange(0, len(vib))
+plt.plot(x, vib)
+plt.show()
+```
+
+<img src="D:\E\Anaconda\JupyterNotebookLearning\ensorFlow\SEU\Mechanical-datasets-master\Figure_1.jpeg" style="width 12px;">
+
+2.Remove following head DAQ information:
+
+| Title:      | fault_type |          |          |          |          |          |          |          |
+| ----------- | ---------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| Parameters: |            |          |          |          |          |          |          |          |
+|             |            |          |          |          |          |          |          |          |
+| DAQ         | Settings:  |          |          |          |          |          |          |          |
+| Frequency   | Limit      | 2000     |          |          |          |          |          |          |
+| Spectral    | Lines      | 1600     |          |          |          |          |          |          |
+| Number      | of         | Blocks   | 1024     |          |          |          |          |          |
+| Total       | Data       | Rows     | 4194304  |          |          |          |          |          |
+| Channels:   |            |          |          |          |          |          |          |          |
+| Legend      |            |          |          |          |          |          |          |          |
+|             |            |          |          |          |          |          |          |          |
+| On/Off      | ON         | ON       | ON       | ON       | ON       | ON       | ON       | ON       |
+|             |            |          |          |          |          |          |          |          |
+| Volts/Unit  | 1          | 1        | 1        | 1        | 1        | 1        | 1        | 1        |
+|             | Channel1   | Channel2 | Channel3 | Channel4 | Channel5 | Channel6 | Channel7 | Channel8 |
+
+**Original warehouse readme.md file:**
+
 This repository contains mechanical datasets used in the paper "Highly-Accurate Machine Fault Diagnosis Using Deep Transfer Learning". All the data are the original vibration signals acquired by sensors.
 
 Bearing dataset is from Case Western Reserve University bearing data center 
