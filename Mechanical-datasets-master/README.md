@@ -18,7 +18,7 @@ plt.plot(x, vib)
 plt.show()
 ```
 
-<img src="D:\E\Anaconda\JupyterNotebookLearning\ensorFlow\SEU\Mechanical-datasets-master\Figure_1.jpeg" style="width 12px;">
+![img](https://github.com/ClarkGableWang/SoutheastUniversity_gearbox_bearing_dataset/blob/main/Mechanical-datasets-master/Figure_1.jpeg)
 
 2.Remove following head DAQ information:
 
