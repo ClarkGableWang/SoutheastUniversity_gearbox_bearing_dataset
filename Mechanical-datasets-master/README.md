@@ -39,8 +39,8 @@ plt.show()
 | Volts/Unit  | 1          | 1        | 1        | 1        | 1        | 1        | 1        | 1        |
 |             | Channel1   | Channel2 | Channel3 | Channel4 | Channel5 | Channel6 | Channel7 | Channel8 |
 
-# Original warehouse readme.md file:
-
+# Original repository and readme.md file:
+https://github.com/cathysiyu/Mechanical-datasets.git
 This repository contains mechanical datasets used in the paper "Highly-Accurate Machine Fault Diagnosis Using Deep Transfer Learning". All the data are the original vibration signals acquired by sensors.
 
 Bearing dataset is from Case Western Reserve University bearing data center 
